@@ -14,5 +14,6 @@ public class DemoTest1 extends QuartzJobBean {
     @Override
     protected void executeInternal(JobExecutionContext context) throws JobExecutionException {
         System.out.println(new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(new Date())+" 执行第"+num.incrementAndGet()+"次");
+        System.out.println("demo");
     }
 }
